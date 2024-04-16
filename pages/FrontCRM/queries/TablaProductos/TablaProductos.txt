@@ -1,0 +1,11 @@
+SELECT		O.IdOperacion AS IdOperacion,
+					O.Cuenta  AS Cuenta,
+					O.ProductoTipo AS ProductoTipo,
+					O.ProductoDesc AS ProductoDesc,
+					O.NumeroProducto AS NumeroProducto,
+					O.DiasMora  AS DiasMora,
+					O.Moneda AS Moneda,
+					O.DeudaTotal AS DeudaTotal
+FROM		Operaciones O
+INNER JOIN	clientes C on O.IdCliente = C.IdCliente
+WHERE C.NroDoc='{{buscaDU.text}}'

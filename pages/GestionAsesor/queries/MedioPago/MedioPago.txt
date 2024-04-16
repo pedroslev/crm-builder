@@ -1,0 +1,2 @@
+SELECT IdMP as value, MedioPago as label
+FROM MedioPago

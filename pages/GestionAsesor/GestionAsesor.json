@@ -1,0 +1,137 @@
+{
+  "unpublishedPage": {
+    "name": "GestionAsesor",
+    "slug": "gestionasesor",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1110,
+          "containerStyle": "none",
+          "snapRows": 45,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 80,
+          "minHeight": 470,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "GestionAsesor_BuscaHistorico",
+              "name": "BuscaHistorico",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.idclin"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "GestionAsesor_BuscaAcuerdos",
+              "name": "BuscaAcuerdos",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.idclin"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "GestionAsesor_Categoria",
+              "name": "Categoria",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "GestionAsesor_MedioPago",
+              "name": "MedioPago",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "GestionAsesor_MotivosNoPago",
+              "name": "MotivosNoPago",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "GestionAsesor_TablaProductos",
+              "name": "TablaProductos",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.idclin"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "GestionAsesor_TablaTelefonos",
+              "name": "TablaTelefonos",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.idclin"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "GestionAsesor_onLoad.onLoad",
+              "name": "onLoad.onLoad",
+              "collectionId": "GestionAsesor_onLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  mitrol.formUrl = appsmith.URL.fullPath;\n  let nroDoc = String(await mitrol.getUrlParams(\"nroDoc\"));\n  buscaDU.text = nroDoc;\n  await onLoad.FetchContacts();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "GestionAsesor_BuscaSubca",
+              "name": "BuscaSubca",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "CategoriaSel.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "GestionAsesor",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "65f08547027ac20471ae66a1_65f47365027ac20471ae6738"
+}

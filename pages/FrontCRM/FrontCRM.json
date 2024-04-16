@@ -1,0 +1,88 @@
+{
+  "unpublishedPage": {
+    "name": "FrontCRM",
+    "slug": "frontcrm",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1030,
+          "containerStyle": "none",
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 85,
+          "minHeight": 1292,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "FrontCRM_MedioPago",
+              "name": "MedioPago",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "FrontCRM_MotivosNoPago",
+              "name": "MotivosNoPago",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "FrontCRM_CierraForm.CierraForm",
+              "name": "CierraForm.CierraForm",
+              "collectionId": "FrontCRM_CierraForm",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  tdoc.setValue('');\n  storeValue('idcli', undefined);\n  storeValue('idclin', undefined);\n  storeValue('nomb', undefined);\n  storeValue('apell', undefined);\n  BuscaDatosCliente.clear();\n  buscaDU.setValue('');\n  doc.setValue('');\n  fnacimiento.setValue('');\n  localidad.setValue('');\n  provincia.setValue('');\n  estado.setValue('');\n  escenario.setValue('');\n  deudatotal.setValue('');\n  diasmora.setValue('');\n  nombre.setValue('');\n  apellido.setValue('');\n  deudatotal.setValue('');\n  diasmora.setValue('');\n  escenario.setValue('');\n  Mail.setValue('');\n  Tel1.setValue('');\n  Tel2.setValue('');\n  Tel3.setValue('');\n  Tel4.setValue('');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "FrontCRM_TablaProductos",
+              "name": "TablaProductos",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "buscaDU.text"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "FrontCRM",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "65e635acb68803242a626ff4_65e721ceb68803242a627020"
+}

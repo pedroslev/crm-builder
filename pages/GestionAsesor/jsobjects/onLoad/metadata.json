@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "onLoad",
+    "pageId": "GestionAsesor",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "GestionAsesor_onLoad",
+  "deleted": false,
+  "gitSyncId": "6618098e451de41b1386a5bc_66183a31451de41b1386a623"
+}

@@ -1,0 +1,4 @@
+SELECT S.IdSUB AS value, S.IdCAT,S.Subcategoria as label
+FROM Subcategoria S
+INNER JOIN Categoria C ON S.IdCAT = C.IdCAT
+WHERE C.IdCAT={{CategoriaSel.selectedOptionValue}}

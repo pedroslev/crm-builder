@@ -1,0 +1,11 @@
+  SELECT	IdTel,
+					NumTel AS Telefono,
+					TipoTel AS Tipo,
+					DescripcionTel  AS Descripcion,
+					Valido AS Valido,
+					OrigenTel AS Origen,
+					FechaCargaTel AS Fecha
+  FROM		Telefonos T
+	WHERE IdCliente={{appsmith.store.idclin}}
+  
+

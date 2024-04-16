@@ -1,0 +1,15 @@
+SELECT CONVERT(VARCHAR,G.FechaHoraGestion,103) AS FechaGestion,
+			CONVERT(VARCHAR,G.FechaHoraGestion,24) AS HoraGestion,
+			C.ApellidoCliente + ' ' + C.NombreCliente AS Cliente,
+			C.NroDoc AS NroDoc,
+			CT.Categoria,
+			S.Subcategoria,
+			G.MotivoNoPago,
+			G.IdInteraccion,
+			G.Comentarios 		
+FROM 		Gestiones G
+INNER JOIN 	Clientes C ON G.IdCliente = C.IdCliente
+INNER JOIN	Subcategoria S ON G.IdSUB = S.IdSUB
+INNER JOIN	Categoria CT ON S.IdCAT = CT.IdCAT
+WHERE G.FechaGestion between CONVERT(varchar,{{FechaGestionD.selectedDate}},103) and CONVERT(varchar,{{FechaGestionH.selectedDate}},103)
+

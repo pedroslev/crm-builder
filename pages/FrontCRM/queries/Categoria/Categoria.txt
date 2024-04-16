@@ -1,0 +1,2 @@
+SELECT IdCAT as value, Categoria as label
+FROM Categoria

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "BuscaDatosClientes",
+    "pageId": "GestionAsesor",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "GestionAsesor_BuscaDatosClientes",
+  "deleted": false,
+  "gitSyncId": "65f08547027ac20471ae66a1_65f47a8e027ac20471ae6740"
+}

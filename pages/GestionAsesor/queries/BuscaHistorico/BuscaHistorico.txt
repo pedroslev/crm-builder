@@ -1,0 +1,14 @@
+SELECT	CONVERT(varchar,G.FechaHoraGestion,103) AS FechaGestion,
+				CONVERT(varchar,G.FechaHoraGestion,120) AS FechaHoraGestion,
+				CT.Categoria AS Categoria,
+				S.Subcategoria AS Subcategoria,
+				G.IdInteraccion,
+				G.IdTarea,
+				G.MotivoNoPago,
+				G.Comentarios
+FROM			gestiones G
+INNER JOIN		clienteS C ON G.IdCliente = C.IdCliente
+INNER JOIN		Subcategoria S ON G.IdSUB = S.IdSUB
+INNER JOIN		Categoria CT ON S.IdCAT = ct.IdCAT
+WHERE			C.IdCliente={{appsmith.store.idclin}}
+ORDER BY		G.FechaHoraGestion DESC

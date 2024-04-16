@@ -1,0 +1,13 @@
+{
+  "name": "mitrol",
+  "uidString": "mitrol_https://cdn.jsdelivr.net/gh/mitrol/mitrol-appsmith-lib@main/dist/mitrol.umd.js",
+  "accessor": [
+    "mitrol"
+  ],
+  "url": "https://cdn.jsdelivr.net/gh/mitrol/mitrol-appsmith-lib@main/dist/mitrol.umd.js",
+  "version": "",
+  "defs": "{\"!name\":\"LIB/mitrol\",\"mitrol\":{\"apiUrl\":{\"!type\":\"string\"},\"formUrl\":{\"!type\":\"string\"},\"post\":{\"!type\":\"fn()\"},\"get\":{\"!type\":\"fn()\"},\"call\":{\"!type\":\"fn()\"},\"hold\":{\"!type\":\"fn()\"},\"resume\":{\"!type\":\"fn()\"},\"hangup\":{\"!type\":\"fn()\"},\"getOutboundCampaigns\":{\"!type\":\"fn()\"},\"setResultadoGestion\":{\"!type\":\"fn()\"},\"getResultadoGestion\":{\"!type\":\"fn()\"},\"getUrlParams\":{\"!type\":\"fn()\"}}}",
+  "deleted": false,
+  "policies": [],
+  "userPermissions": []
+}

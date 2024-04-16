@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "InsertaAcuerdos",
+    "pageId": "GestionAsesor",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "GestionAsesor_InsertaAcuerdos",
+  "deleted": false,
+  "gitSyncId": "65f08547027ac20471ae66a1_65f47aba027ac20471ae674c"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "CierraForm",
+    "pageId": "GestionAsesor",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "GestionAsesor_CierraForm",
+  "deleted": false,
+  "gitSyncId": "65f08547027ac20471ae66a1_65f47aa7027ac20471ae6748"
+}

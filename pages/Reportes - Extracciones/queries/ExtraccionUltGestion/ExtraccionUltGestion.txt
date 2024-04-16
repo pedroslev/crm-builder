@@ -1,0 +1,28 @@
+SELECT		Cl.ApellidoCliente + ' ' + Cl.NombreCliente AS Cliente,
+					CL.NroDoc AS NroDoc,
+					ULT.FechaGestion AS FechaGestion,
+					ULT.HoraGestion AS HoraGestion,
+					ULT.Categoria,
+					ULT.Subcategoria,
+					ULT.MotivoNoPago,
+					ULT.Comentarios
+FROM			Clientes CL
+INNER JOIN (
+			SELECT		UMG.IDC,
+						UMG.ULG,
+						CONVERT(VARCHAR,G.FechaGestion,103) FechaGestion,
+						CONVERT(VARCHAR,G.FechaHoraGestion,24) HoraGestion,
+						CT.Categoria,
+						S.Subcategoria,
+						G.MotivoNoPago,
+						G.Comentarios
+			FROM		Gestiones G
+			INNER JOIN (
+						SELECT		UG.IdCliente IDC,
+									MAX(UG.IdGestion) ULG
+						FROM		GESTIONES UG
+						GROUP BY	UG.IdCliente ) UMG ON G.IdGestion = UMG.ULG
+			INNER JOIN	Subcategoria S ON G.IdSUB = s.IdSUB
+			INNER JOIN	Categoria CT ON S.IdCAT = CT.IdCAT ) ULT ON ULT.IDC = CL.IdCliente
+WHERE		CL.FechaActualizaCliente=CONVERT(varchar,{{FechaActualA.selectedDate}},103) or CL.FechaCargaCliente=CONVERT(varchar,{{FechaCargaA.selectedDate}},103)
+

@@ -1,0 +1,12 @@
+SELECT		O.IdOperacion AS IdOperacion,
+					O.Cuenta  AS Cuenta,
+					O.ProductoTipo AS ProductoTipo,
+					O.ProductoDesc AS ProductoDesc,
+					O.NumeroProducto AS NumeroProducto,
+					O.DiasMora  AS DiasMora,
+					O.Moneda AS Moneda,
+					FORMAT(O.DeudaTotal,'N', 'en-us') AS DeudaTotal,
+					FORMAT(O.DeudaVencida,'N', 'en-us') AS DeudaVencida
+FROM		Operaciones O
+INNER JOIN	clientes C on O.IdCliente = C.IdCliente
+WHERE C.IdCliente={{appsmith.store.idclin}}

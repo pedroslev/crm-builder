@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ValidarVacio",
+    "pageId": "FrontCRM",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "FrontCRM_ValidarVacio",
+  "deleted": false,
+  "gitSyncId": "65e635acb68803242a626ff4_65e8a044b68803242a627137"
+}

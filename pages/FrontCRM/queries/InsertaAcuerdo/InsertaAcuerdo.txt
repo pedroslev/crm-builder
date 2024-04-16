@@ -1,0 +1,1 @@
+EXEC InsertaAcuerdo @idcl={{appsmith.store.idclin}},@idop={{ido.text}},@tiac={{SubcategoriaSel.selectedOptionLabel}},@fep={{FechaPromesa.selectedDate}},@mep={{MedPago.selectedOptionLabel}},@mop={{MontoPago.text}},@com={{comentarios.text}}

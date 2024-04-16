@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "BuscaDatosProductos",
+    "pageId": "FrontCRM",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "FrontCRM_BuscaDatosProductos",
+  "deleted": false,
+  "gitSyncId": "65e635acb68803242a626ff4_65e86611b68803242a627107"
+}

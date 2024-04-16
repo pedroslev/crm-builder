@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "ValidarVacio",
+    "pageId": "GestionAsesor",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "GestionAsesor_ValidarVacio",
+  "deleted": false,
+  "gitSyncId": "65f08547027ac20471ae66a1_65f47ac5027ac20471ae6750"
+}

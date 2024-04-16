@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "CierraForm",
+    "pageId": "FrontCRM",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "FrontCRM_CierraForm",
+  "deleted": false,
+  "gitSyncId": "65e635acb68803242a626ff4_65ea12bb40a203251ecc330a"
+}

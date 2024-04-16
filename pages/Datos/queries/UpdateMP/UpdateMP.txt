@@ -1,0 +1,3 @@
+UPDATE motivoNoPago SET 
+  motivoNP = {{Table1.updatedRow.MotivoNP}}
+  WHERE IdMNP = {{ Table1.updatedRow.IdMNP }};

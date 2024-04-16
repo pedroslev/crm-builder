@@ -1,0 +1,1 @@
+EXEC InsertaGestion @idcl={{appsmith.store.idclin}},@mnp={{MotivoNoPago.selectedOptionLabel}},@sub={{SubcategoriaSel.selectedOptionValue}},@com={{comentarios.text}}

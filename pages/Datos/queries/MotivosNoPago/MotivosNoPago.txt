@@ -1,0 +1,3 @@
+SELECT	IdMNP AS id, 
+				motivoNP AS MotivoNoPago
+FROM motivoNoPago

@@ -1,0 +1,2 @@
+INSERT INTO motivoNoPago (MotivoNP)
+SELECT {{Table1.newRow.MotivoNoPago}}

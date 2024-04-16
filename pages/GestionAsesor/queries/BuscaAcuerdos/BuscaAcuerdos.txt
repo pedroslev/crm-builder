@@ -1,0 +1,11 @@
+SELECT		CONVERT(VARCHAR,A.FechaAcuerdo,21) AS FechaAcuerdo,
+					O.NumeroProducto,
+					O.ProductoTipo,
+					A.TipoAcuerdo,
+					A.FechaPromesa,
+					format(A.MontoPromesa, 'N', 'en-us') AS MontoPromesa,
+					A.MedioPago
+FROM acuerdos A
+LEFT JOIN Clientes C ON A.IdCli = C.IdCliente
+LEFT JOIN Operaciones O ON A.IdOperacion = O.IdOperacion
+WHERE C.IdCliente={{appsmith.store.idclin}}

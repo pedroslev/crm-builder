@@ -1,0 +1,2 @@
+SELECT IdMNP as value, motivoNP as label
+FROM MotivoNoPago
